@@ -28,7 +28,7 @@ var config = {
 						url: "http://localhost:8011/tests/configs/data/calendar_test.ics",
 						auth: {
 							user: "MagicMirror",
-							pass: "CallMeADog"
+							pass: "python3.6"
 						}
 					}
 				]
