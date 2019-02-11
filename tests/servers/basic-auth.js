@@ -11,7 +11,7 @@ var basic = auth.basic(
 		realm: "MagicMirror Area restricted."
 	},
 	(username, password, callback) => {
-		callback(username === "MagicMirror" && password === "CallMeADog");
+		callback(username === "MagicMirror" && password === "python3.6");
 	}
 );
 
