@@ -1,13 +1,17 @@
 Raspbian OS Setup
 
 1. Insert SD Card into the adapter
-2. Open and delete everything on it
+2. Open and delete everything in it
 3. Download SDformatter from: https://www.sdcard.org/downloads/formatter_4/ #This works with Windows and Mac
 4. Download Etcher from: https://www.balena.io/etcher/
-5.  Download Raspbian Os (NOOBS Offline and network install)from:
-https://www.raspberrypi.org/downloads/noobs/
+5.  Download Raspbian OS (Not the Lite version)from: https://www.raspberrypi.org/downloads/noobs/
 6. Format the SD Card using SDformatter.
-7. 
+7. Unzip and extract the Raspbian OS.
+8. Open Etcher select image, choose the unzipped file in the downloads, SDcard(you can chane if it's a different name) the press flash.
+# Alternatively
+For linux /ubuntu users
+Extract the OS directly into the SDcard.
+9. Remove the SDcard and plug it into the raspberry pi.
 
 
 
