@@ -34,7 +34,7 @@ describe("Newsfeed module", function() {
 		});
 
 		it("show title newsfeed", function() {
-			return app.client.waitUntilTextExists(".newsfeed .small", "Rodrigo Ramirez Blog", 10000).should.be.fulfilled;
+			return app.client.waitUntilTextExists(".newsfeed .small", "SmartMirror Blog", 10000).should.be.fulfilled;
 		});
 	});
 });
