@@ -1,0 +1,13 @@
+Raspbian OS Setup
+
+1. Insert SD Card into the adapter
+2. Open and delete everything on it
+3. Download SDformatter from: https://www.sdcard.org/downloads/formatter_4/ #This works with Windows and Mac
+4. Download Etcher from: https://www.balena.io/etcher/
+5.  Download Raspbian Os (NOOBS Offline and network install)from:
+https://www.raspberrypi.org/downloads/noobs/
+6. Format the SD Card using SDformatter.
+7. 
+
+
+
