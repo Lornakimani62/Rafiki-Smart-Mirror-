@@ -1,8 +1,5 @@
 /* Magic Mirror
  * Node Helper: Calendar - CalendarFetcher
- *
- * By Michael Teeuw http://michaelteeuw.nl
- * MIT Licensed.
  */
 
 var ical = require("./vendor/ical.js");
@@ -293,15 +290,6 @@ var CalendarFetcher = function(url, reloadInterval, excludedEvents, maximumEntri
 		return false;
 	};
 
-	/* timeFilterApplies()
-	 * Determines if the user defined time filter should apply
-	 *
-	 * argument now Date - Date object using previously created object for consistency
-	 * argument endDate Moment - Moment object representing the event end date
-	 * argument filter string - The time to subtract from the end date to determine if an event should be shown
-	 *
-	 * return bool - The event should be filtered out
-	 */
 	var timeFilterApplies = function(now, endDate, filter) {
 		if (filter) {
 			var until = filter.split(" "),
