@@ -2,9 +2,6 @@
 
 /* Magic Mirror
  * Module: Calendar
- *
- * By Michael Teeuw http://michaelteeuw.nl
- * MIT Licensed.
  */
 
 Module.register("calendar", {
@@ -38,7 +35,7 @@ Module.register("calendar", {
 		calendars: [
 			{
 				symbol: "calendar",
-				url: "http://www.calendarlabs.com/templates/ical/US-Holidays.ics",
+				url: "http://www.calendarlabs.com/templates/ical/UK-Holidays.ics",
 			},
 		],
 		titleReplace: {
