@@ -1,7 +1,4 @@
 /* Magic Mirror Test config newsfeed module
- *
- * By Rodrigo Ramírez Norambuena https://rodrigoramirez.com
- * MIT Licensed.
  */
 
 var config = {
@@ -25,7 +22,7 @@ var config = {
 			config: {
 				feeds: [
 					{
-						title: "Rodrigo Ramirez Blog",
+						title: "SmartMirror Blog",
 						url: "http://localhost:8080/tests/configs/data/feed_test_rodrigoramirez.xml"
 					},
 				]
