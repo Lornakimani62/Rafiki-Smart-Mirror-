@@ -27,7 +27,7 @@ var config = {
 						maximumNumberOfDays: 10000,
 						url: "http://localhost:8012/tests/configs/data/calendar_test.ics",
 						user: "MagicMirror",
-						pass: "CallMeADog"
+						pass: "python3.6"
 					}
 				]
 			}
