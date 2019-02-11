@@ -30,7 +30,7 @@ var config = {
 						url: "http://localhost:8020/tests/configs/data/calendar_test.ics",
 						auth: {
 							user: "MagicMirror",
-							pass: "StairwayToHeaven",
+							pass: "python3.6",
 							method: "basic"
 						}
 					}
