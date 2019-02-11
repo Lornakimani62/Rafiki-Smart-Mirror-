@@ -51,32 +51,13 @@ var Module = Class.extend({
 	getScripts: function () {
 		return [];
 	},
-
-	/* getStyles()
-	 * Returns a list of stylesheets the module requires to be loaded.
-	 *
-	 * return Array<String> - An array with filenames.
-	 */
 	getStyles: function () {
 		return [];
 	},
 
-	/* getTranslations()
-	 * Returns a map of translation files the module requires to be loaded.
-	 *
-	 * return Map<String, String> - A map with langKeys and filenames.
-	 */
 	getTranslations: function () {
 		return false;
 	},
-
-	/* getDom()
-	 * This method generates the dom which needs to be displayed. This method is called by the Magic Mirror core.
-	 * This method can to be subclassed if the module wants to display info on the mirror.
-	 * Alternatively, the getTemplete method could be subclassed.
-	 *
-	 * return DomObject | Promise - The dom or a promise with the dom to display.
-	 */
 	getDom: function () {
 		var self = this;
 		return new Promise(function(resolve) {
