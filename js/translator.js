@@ -3,13 +3,6 @@
  * Translator (l10n)
  */
 var Translator = (function() {
-
-	/* loadJSON(file, callback)
-	 * Load a JSON file via XHR.
-	 *
-	 * argument file string - Path of the file we want to load.
-	 * argument callback function - Function called when done.
-	 */
 	function loadJSON(file, callback) {
 		var xhr = new XMLHttpRequest();
 		xhr.overrideMimeType("application/json");
@@ -22,14 +15,6 @@ var Translator = (function() {
 		xhr.send(null);
 	}
 
-	/* loadJSON(str, options)
-	 * Remove any commenting from a json file so it can be parsed.
-	 *
-	 * argument str string - The string that contains json with comments.
-	 * argument opts function - Strip options.
-	 *
-	 * return the stripped string.
-	 */
 	function stripComments(str, opts) {
 		// strip comments copied from: https://github.com/sindresorhus/strip-json-comments
 
@@ -108,13 +93,6 @@ var Translator = (function() {
 		translations: {},
 		translationsFallback: {},
 
-		/* translate(module, key, variables)
-		 * Load a translation for a given key for a given module.
-		 *
-		 * argument module Module - The module to load the translation for.
-		 * argument key string - The key of the text to translate.
-		 * argument variables - The variables to use within the translation template (optional)
-		 */
 		translate: function(module, key, variables) {
 			variables = variables || {}; //Empty object by default
 
