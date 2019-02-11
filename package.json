@@ -1,5 +1,5 @@
 {
-  "name": "magicmirror",
+  "name": "smartmirror",
   "version": "2.6.0",
   "description": "The open source modular smart mirror platform.",
   "main": "js/electron.js",
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MichMich/MagicMirror.git"
+    "url": "git+https://github.com/Lornakimani62/Rafiki-Smart-Mirror-.git"
   },
   "keywords": [
     "magic mirror",

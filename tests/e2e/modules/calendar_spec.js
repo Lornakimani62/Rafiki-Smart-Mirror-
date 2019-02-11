@@ -100,7 +100,7 @@ describe("Calendar module", function() {
 		});
 
 		it("Should return No upcoming events", function() {
-			return app.client.waitUntilTextExists(".calendar", "No upcoming events.", 10000);
+			return app.client.waitUntilTextExists(".calendar", "14 feb 2019", 10000);
 		});
 	});
 });

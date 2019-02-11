@@ -1,8 +1,5 @@
 /* Magic Mirror
  * Node Helper: Calendar
- *
- * By Michael Teeuw http://michaelteeuw.nl
- * MIT Licensed.
  */
 
 var NodeHelper = require("node_helper");
@@ -27,14 +24,6 @@ module.exports = NodeHelper.create({
 			this.createFetcher(payload.url, payload.fetchInterval, payload.excludedEvents, payload.maximumEntries, payload.maximumNumberOfDays, payload.auth);
 		}
 	},
-
-	/* createFetcher(url, reloadInterval)
-	 * Creates a fetcher for a new url if it doesn't exist yet.
-	 * Otherwise it reuses the existing one.
-	 *
-	 * attribute url string - URL of the news feed.
-	 * attribute reloadInterval number - Reload interval in milliseconds.
-	 */
 
 	createFetcher: function(url, fetchInterval, excludedEvents, maximumEntries, maximumNumberOfDays, auth) {
 		var self = this;

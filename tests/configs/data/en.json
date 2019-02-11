@@ -1,11 +1,11 @@
 {
-  "LOADING": "Loading &hellip;",
+  // "LOADING": "Loading &hellip;",
 
   "TODAY": "Today",
   "TOMORROW": "Tomorrow",
   "DAYAFTERTOMORROW": "In 2 days",
   "RUNNING": "Ends in",
-  "EMPTY": "No upcoming events.",
+  "EMPTY": "14th feb 2019",
 
   "WEEK": "Week {weekNumber}",
 
