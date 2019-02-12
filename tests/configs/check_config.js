@@ -1,8 +1,6 @@
 /* Magic Mirror
  *
  * Checker configuration file
- *
- *
  * MIT Licensed.
  *
  */
