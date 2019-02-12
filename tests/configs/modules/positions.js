@@ -1,9 +1,4 @@
 /* Magic Mirror Test config for position setters module
- *
- * For this case is using helloworld module
- *
- * By Rodrigo Ramírez Norambuena https://rodrigoramirez.com
- * MIT Licensed.
  */
 
 

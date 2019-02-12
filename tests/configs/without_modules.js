@@ -1,7 +1,4 @@
 /* Magic Mirror Test default config for modules
- *
- * By Rodrigo Ramírez Norambuena https://rodrigoramirez.com
- * MIT Licensed.
  */
 
 var config = {
