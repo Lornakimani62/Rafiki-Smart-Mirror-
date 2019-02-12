@@ -56,7 +56,6 @@ Temporary Items
 .directory
 .Trash-*
 
-# Various Magic Mirror ignoramuses and anti-ignoramuses.
 
 # Don't ignore the node_helper core module.
 !/modules/node_helper
@@ -71,7 +70,6 @@ Temporary Items
 # Ignore changes to the custom css files.
 /css/custom.css
 
-# Vim
 ## swap
 [._]*.s[a-w][a-z]
 [._]s[a-w][a-z]
