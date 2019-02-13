@@ -1,10 +1,13 @@
-<!-- ![MagicMirror²: The open source modular smart mirror platform. ](.github/header.png)
-
-**MagicMirror²** is an open source modular smart mirror platform. With a growing list of installable modules, the **MagicMirror²** allows you to convert your hallway or bathroom mirror into your personal assistant. **MagicMirror²** is built by the creator of [the original MagicMirror](http://michaelteeuw.nl/tagged/magicmirror) with the incredible help of a [growing community of contributors](https://github.com/MichMich/MagicMirror/graphs/contributors).
-
+# Magic-Mirror
+# Application
+**MagicMirror** is an open source modular smart mirror platform. With a growing list of installable modules, the **MagicMirror** allows you to convert your hallway or bathroom mirror into your personal assistant. 
 MagicMirror² focuses on a modular plugin system and uses [Electron](http://electron.atom.io/) as an application wrapper. So no more web server or browser installs necessary!
-
-## Table Of Contents
+# Authors
+- Lorna Kimani 
+- Sylvester Omondi
+- Gloria Givondo
+- Vincent Otach
+# Table Of Contents
 
 - [Installation](#installation)
   - [Raspberry Pi](#raspberry-pi)
@@ -14,29 +17,14 @@ MagicMirror² focuses on a modular plugin system and uses [Electron](http://elec
   - [Docker](#docker)
 - [Configuration](#configuration)
 - [Modules](#modules)
-- [Updating](#updating)
-- [Known Issues](#known-issues)
-- [Community](#community)
-- [Contributing Guidelines](#contributing-guidelines)
-- [Manifesto](#manifesto)
 
-## Installation
 
-### Raspberry Pi
+# Automatic Installation (Raspberry Pi only!)
 
-#### Automatic Installation (Raspberry Pi only!)
+*Electron*, the app wrapper around MagicMirror², only supports the Raspberry Pi 2/3. The Raspberry Pi 0/1 is currently **not** supported. If you want to run this on a Raspberry Pi 1, use the [server only](#server-only) feature and setup a fullscreen browser yourself.
 
-*Electron*, the app wrapper around MagicMirror², only supports the Raspberry Pi 2/3. The Raspberry Pi 0/1 is currently **not** supported. If you want to run this on a Raspberry Pi 1, use the [server only](#server-only) feature and setup a fullscreen browser yourself. (Yes, people have managed to run MM² also on a Pi0, so if you insist, search in the forums.)
 
-Note that you will need to install the latest full version of Raspbian, **don't use the Lite version**.
-
-Execute the following command on your Raspberry Pi to install MagicMirror²:
-
-```bash
-bash -c "$(curl -sL https://raw.githubusercontent.com/MichMich/MagicMirror/master/installers/raspberry.sh)"
-```
-
-#### Manual Installation
+# Manual Installation
 
 1. Download and install the latest *Node.js* version:
 - `curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -`
@@ -63,7 +51,7 @@ Also note that:
 - To toggle the (web) `Developer Tools` from mirror mode, use `CTRL-SHIFT-I` or `ALT` and select `View`.
 
 
-### Server Only
+# Server Only
 
 In some cases, you want to start the application without an actual app window. In this case, you can start MagicMirror² in server only mode by manually running `node serveronly` or using Docker. This will start the server, after which you can open the application in your browser of choice. Detailed description below.
 
@@ -78,35 +66,9 @@ var config = {
 };
 ```
 
-
-### Client Only
+# Client Only
 
 This is when you already have a server running remotely and want your RPi to connect as a standalone client to this instance, to show the MM from the server. Then from your RPi, you run it with: `node clientonly --address 192.168.1.5 --port 8080`. (Specify the ip address and port number of the server)
-
-
-### Docker
-
-MagicMirror² in server only mode can be deployed using [Docker](https://docker.com). After a successful [Docker installation](https://docs.docker.com/engine/installation/) you just need to execute the following command in the shell:
-
-```bash
-docker run  -d \
-	--publish 80:8080 \
-	--restart always \
-	--volume ~/magic_mirror/config:/opt/magic_mirror/config \
-	--volume ~/magic_mirror/modules:/opt/magic_mirror/modules \
-	--name magic_mirror \
-	bastilimbach/docker-magicmirror
-```
-To get more information about the available Dockerfile versions and configurations head over to the respective [GitHub repository](https://github.com/bastilimbach/docker-MagicMirror).
-
-
-## Configuration
-
-### Raspberry Specific
-
-The following wiki links are helpful for the initial configuration of your MagicMirror² operating system:
-- [Configuring the Raspberry Pi](https://github.com/MichMich/MagicMirror/wiki/Configuring-the-Raspberry-Pi)
-- [Auto Starting MagicMirror](https://github.com/MichMich/MagicMirror/wiki/Auto-Starting-MagicMirror)
 
 
 ### General
@@ -157,7 +119,6 @@ The following modules are installed by default.
 - [**Hello World**](modules/default/helloworld)
 - [**Alert**](modules/default/alert)
 
-For more available modules, check out out the wiki page [MagicMirror² 3rd Party Modules](https://github.com/MichMich/MagicMirror/wiki/3rd-party-modules). If you want to build your own modules, check out the [MagicMirror² Module Development Documentation](modules) and don't forget to add it to the wiki and the [forum](https://forum.magicmirror.builders/category/7/showcase)!
 
 
 ## Updating
@@ -172,14 +133,6 @@ If you changed nothing more than the config or the modules, this should work wit
 Type `git status` to see your changes, if there are any, you can reset them with `git reset --hard`. After that, git pull should be possible.
 
 
-## Community
-
-The community around the MagicMirror² is constantly growing. We even have a [forum](https://forum.magicmirror.builders) now where you can share your ideas, ask questions, help others and get inspired by other builders. We would love to see you there!
-
-## Contributing Guidelines
-
-Contributions of all kinds are welcome, not only in the form of code but also with regards bug reports and documentation.
-
 Please keep the following in mind:
 
 - **Bug Reports**:  Make sure you're running the latest version. If the issue(s) still persist: please open a clearly documented issue with a clear title.
@@ -187,25 +140,5 @@ Please keep the following in mind:
 - **Major Bug Fixes**: please discuss your approach in an GitHub issue before you start to alter a big part of the code.
 - **New Features**: please please discuss in a GitHub issue before you start to alter a big part of the code. Without discussion upfront, the pull request will not be accepted / merged.
 
-Thanks for your help in making MagicMirror² better!
-
-## Manifesto
-
-A real Manifesto is still to be written. Till then, Michael's response on [one of the repository issues](https://github.com/MichMich/MagicMirror/issues/1174) gives a great summary:
-
-> "... I started this project as an ultimate starter project for Raspberry Pi enthusiasts. As a matter of fact, for most of the contributors, the MagicMirror project is the first open source project they ever contributed to. This is one of the reasons why the MagicMirror project is featured in several RasPi magazines.
->
->The project has a lot of opportunities for improvement. We could use a powerful framework like Vue to ramp up the development speed. We could use SASS for better/easier css implementations. We could make it an NPM installable package. And as you say, we could bundle it up. The big downside of of of these changes is that it over complicates things: a user no longer will be able to open just one file and make a small modification and see how it works out.
->
->Of course, a bundled version can be complimentary to the regular un-bundled version. And I'm sure a lot of (new) users will opt for the bundled version. But this means those users won't be motivated to take a peek under the hood. They will just remain 'users'. They won't become contributors, and worse: they won't be motivated to take their first steps in software development.
->
->And to be honest: motivating curious users to step out of their comfort zone and take those first steps is what drives me in this project. Therefor my ultimate goal is this project is to keep it as accessible as possible."
->
-> ~ Michael Teeuw
 
 
-
-<p align="center">
-<br>
-	<a href="https://forum.magicmirror.builders/topic/728/magicmirror-is-voted-number-1-in-the-magpi-top-50"><img src="https://magicmirror.builders/img/magpi-best-watermark-custom.png" width="150" alt="MagPi Top 50"></a>
-</p> -->
