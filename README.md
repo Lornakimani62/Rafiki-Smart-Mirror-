@@ -140,5 +140,6 @@ Please keep the following in mind:
 - **Major Bug Fixes**: please discuss your approach in an GitHub issue before you start to alter a big part of the code.
 - **New Features**: please please discuss in a GitHub issue before you start to alter a big part of the code. Without discussion upfront, the pull request will not be accepted / merged.
 
-
+# MIT LICENSE
+Copyright (c) Rafiki-Smart-Mirror
 
